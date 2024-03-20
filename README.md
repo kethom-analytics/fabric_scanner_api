@@ -40,3 +40,22 @@ The notebook uses the [semantic-link](https://learn.microsoft.com/en-us/fabric/d
   
 
 ## How to consume
+Each of the extracted tables contains the flattened data for the respective entity. Since the notebook keeps the history of the past days, some additional columns have been added:
+- date: Date of extraction
+- \<entity\>_key : Concatenated field with date and the respective id. This field is needed to have an unique key to join the data. Since the ids are not unique anymore due to historisation. This new "primary" and "foreign" keys are persisted so they can be easily used to connect via Power BI Direct Lake.<br />
+
+To create a direct lake connection, open the Lakehouse (not in the notebook) and create "New semantic model":<br />
+![image](https://github.com/kethom-analytics/fabric_scanner_api/assets/164002227/6ad2912a-ede2-4461-90e8-d06da27b8731)<br />
+
+Choose the needed tables for your semantic model:<br />
+
+![image](https://github.com/kethom-analytics/fabric_scanner_api/assets/164002227/9c52d2d8-5a85-4755-aa57-f99de854847c)<br />
+
+Create a data model with relationships and measure for your analytical needs:<br />
+![image](https://github.com/kethom-analytics/fabric_scanner_api/assets/164002227/11214b06-8673-4592-aa11-fdea78b2e053)
+
+
+
+
+
+ 
