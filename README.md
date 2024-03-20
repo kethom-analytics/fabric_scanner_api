@@ -1,4 +1,4 @@
-# Fabric Scanner API Notebook
+# Get all Fabric Artifact with Metadata Scanner API in Fabric Notebook
 ## About
 This solution uses Microsoft Fabrics [metadata scanner api](https://learn.microsoft.com/en-us/fabric/governance/metadata-scanning-overview) to provide an easy and fast overview on all metadata of your organisation's Fabric items. It uses Fabric Notebooks to retrieve and transform the data and a Fabric Lakehouse to store the data.
 There is no need for any service or application outsite of Microsoft Fabric. The notebook stores the raw json data retrieved via the API within the files section within the following path Metadata_Requests/\<date of request\>/\<time of request\> (this can be deactivated). Additionally it parses different entities of the result into delta parquet tables so they are available for easy consumption within Fabric (see How to consume).
