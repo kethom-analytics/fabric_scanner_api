@@ -54,6 +54,8 @@ Choose the needed tables for your semantic model:<br />
 Create a data model with relationships and measure for your analytical needs:<br />
 ![image](https://github.com/kethom-analytics/fabric_scanner_api/assets/164002227/11214b06-8673-4592-aa11-fdea78b2e053)
 
+The relationships need to be done over the respective key columns, because the id will not be unique. The key columns contain a concatenated string with the date, which makes it unique.
+
 
 
 
