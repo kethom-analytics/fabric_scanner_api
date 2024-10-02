@@ -57,6 +57,12 @@ Create a data model with relationships and measure for your analytical needs:<br
 The relationships need to be done over the respective key columns, because the id will not be unique. The key columns contain a concatenated string with the date, which makes it unique.
 
 
+## Important
+
+- This is a community project that is **not** supported by Microsoft.
+- **The code in this repository and any related information are without warranty of any kind.**
+- The deployed solution will utilize CUs (Compute Units) on your Microsoft Fabric SKU on your PBI/Fabric tenant.
+- Please test the solution on a non-production Fabric SKU first without impacting other workloads on your tenant.
 
 
 
